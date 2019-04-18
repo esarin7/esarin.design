@@ -20,8 +20,15 @@ h2 {
   text-align: center;
 }
 
+p {
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
+}
+
 ul li {
   list-style: none;
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
 }
 
 .parallax-image {
@@ -117,7 +124,7 @@ Mobile Menu
 }
 .menu li {
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Bitter", serif;
   font-size: 16px;
   color: #fff;
   width: 80%;
@@ -180,40 +187,43 @@ Hero
 .hero {
   background-attachment: fixed;
   height: 650px;
-  padding: 50px 50px 5px 50px;
+  padding: 10px 10px;
   background-image: url(../images/flowers.jpg);
   background-position: 80% 30%;
   background-size: cover;
 }
 .hero-content {
   width: 40%;
-  margin-top: 120px;
-  margin-left: 80px;
+  margin-top: 0px;
+  margin: 140px;
+  margin-left: 188px;
 }
 .hero h1 {
   font-family: "Playfair Display", serif;
-  font-size: 4.06em;
-  margin: 0;
-  font-weight: 400;
+  font-size: 4.13em;
   color: #fff;
-
-  margin-bottom: 4px;
+  text-shadow: 1px 1px 2px #000;
+  margin-bottom: 5px;
 }
-.hero p {
+
+.hero h3 {
+  color: #fff;
+  
+}
+
+.hero h4 {
   margin-left: 5px;
   text-align: left;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  font-family: "Libre Franklin", sans-serif;
 }
 
 @media screen and (max-width: 700px) {
   .hero {
     height: 500px;
     background-position: 30% 0%;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(69, 69, 69, 0.092),
-        rgba(0, 0, 0, 0)
-      ),
-      url(../images/flowers.jpg);
+    background-image: url(../images/flowers.jpg);
   }
 
   .hero-content {
@@ -264,7 +274,6 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 60px;
 }
 
 .projects-hp-row {
@@ -302,8 +311,8 @@ p {
 }
 
 .projects-hp-box p {
-  font-family: "Roboto" sans-serif;
-  font-size: 15px;
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
   line-height: 1.5em;
 }
 
@@ -585,13 +594,6 @@ footer a {
 
 .social-icons li {
   flex: 1;
-}
-
-footer span {
-  font-size: 10px;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 0.3em;
 }
 
 footer p {
