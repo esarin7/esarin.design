@@ -28,13 +28,7 @@ ul li {
   position: relative;
   background-attachment: fixed;
   height: 80px;
-  color: rgb(110, 110, 110);
-  background-image: linear-gradient(
-      90deg,
-      rgba(161, 161, 161, 0.4),
-      rgba(0, 0, 0, 0)
-    ),
-    url(../img/parallax-image.jpg);
+  background-image: url(../images/parallax.jpg);
   background-position: 0px 200px;
   background-size: cover;
 }
@@ -42,7 +36,7 @@ ul li {
 button {
   color: #fff;
   border: none;
-  background: #cf1e43;
+  background: #8a6138;
   padding: 5px 10px;
   margin-top: 0px;
   margin: 20px 10px 10px;
@@ -60,35 +54,18 @@ Header
 
 header {
   height: 66px;
-  background: #f660e9;
-  background: linear-gradient(354deg, #f660e9 0%, #6056c6 50%);
+  background: #2c9c91;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   padding-bottom: 5px;
   padding-left: 20px;
 }
 
-.logo {
-  margin-right: auto;
-}
-
-.logo i {
-  color: pink;
-}
-
-.logo span {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  margin-left: 5px;
-  color: #fff;
-}
-
 header ul {
   margin-bottom: 0;
   display: flex;
   list-style: none;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 header li {
@@ -97,7 +74,7 @@ header li {
 
 header ul li a {
   height: 66px;
-  padding: 0 20px;
+  padding: 0 70px 0 100px;
   display: flex;
   align-items: center;
   color: #fff;
@@ -105,7 +82,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-  background: rgba(255, 255, 255, 0.404);
+  background: rgba(255, 255, 255, 0.306);
 }
 
 a:hover {
@@ -120,7 +97,7 @@ Mobile Menu
 .menu {
   width: 200px;
   opacity: 0.9;
-  background: linear-gradient(354deg, #f660e9 0%, #6056c6 80%);
+  background: #fe5f55;
   height: 60vh;
   position: absolute;
   top: 0;
@@ -203,9 +180,7 @@ Hero
   background-attachment: fixed;
   height: 650px;
   padding: 50px 50px 5px 50px;
-  color: #6e6e6e;
-  background-image: linear-gradient(90deg, #a1a1a166, #00000000),
-    url(../img/hero-background.jpg);
+  background-image: url(../images/flowers.jpg);
   background-position: 80% 30%;
   background-size: cover;
 }
@@ -219,24 +194,12 @@ Hero
   font-size: 4em;
   margin: 0;
   font-weight: 400;
-  color: #646464;
+  color: #fff;
   margin-bottom: 10px;
 }
 .hero p {
   margin-left: 5px;
   text-align: left;
-}
-.hero button {
-  color: #fff;
-  border: none;
-  background: #cf1e43;
-  padding: 10px 20px;
-  margin-top: 10px;
-}
-.hero button:hover {
-  cursor: pointer;
-  background: #980021;
-  color: #fff;
 }
 
 @media screen and (max-width: 700px) {
@@ -348,15 +311,22 @@ p {
   margin: 5px auto;
 }
 
+/* icons homepage */
+
+.lets-chat-icon {
+  background-image: url(../images/lets-chat-icon.png);
+  height: 100px;
+  /*position: relative;*/
+}
+
 /* * * * * * * * * * * * * * * * * * * * *
 About Page
 * * * * * * * * * * * * * * * * * * * * */
 
 .about-hero {
-  background: linear-gradient(90deg, #686868a3, #00000000),
-    url(../img/img11.jpg);
-  background-attachment: fixed;
+  background-color: #fe5f55;
   height: 200px;
+  background-attachment: fixed;
   background-size: cover;
   margin: 0;
   position: relative;
@@ -432,8 +402,7 @@ Contact Page
 * * * * * * * * * * * * * * * * * * * * */
 
 .contact-hero {
-  background: linear-gradient(90deg, #686868a3, #00000000),
-    url(../img/img11.jpg);
+  background: #fe5f55;
   background-attachment: fixed;
   height: 200px;
   background-size: cover;
@@ -486,8 +455,7 @@ Projects Page
 * * * * * * * * * * * * * * * * * * * * */
 
 .projects-hero {
-  background: linear-gradient(90deg, #686868a3, #00000000),
-    url(../img/img11.jpg);
+  background: #fe5f55;
   background-attachment: fixed;
   height: 200px;
   background-size: cover;
@@ -521,6 +489,10 @@ Projects Page
 
 .projects-content {
   width: 100%;
+}
+
+.projects-content ul li {
+  font-size: 15px;
 }
 
 .projects-content h6 {
@@ -562,27 +534,16 @@ Projects Page
 }
 
 /* * * * * * * * * * * * * * * * * * * * *
-Privacy
+Challenges
 * * * * * * * * * * * * * * * * * * * * */
 
 /* * * * * * * * * * * * * * * * * * * * *
 Footer
 * * * * * * * * * * * * * * * * * * * * */
-.zigzag {
-  background: url(../img/zigzag-bg.svg);
-  height: 10px;
-  position: relative;
-  top: -10px;
-}
 
 footer {
   width: 100%;
-  background: rgb(246, 96, 233);
-  background: linear-gradient(
-    354deg,
-    rgba(246, 96, 233, 1) 0%,
-    rgba(96, 86, 198, 1) 50%
-  );
+  background: #2c9c91;
 }
 
 .container {
@@ -633,5 +594,5 @@ footer span {
 
 footer p {
   color: rgba(255, 255, 255, 0.639);
-  font-size: 15px;
+  font-size: 16px;
 }
