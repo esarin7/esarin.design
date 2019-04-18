@@ -192,11 +192,12 @@ Hero
 }
 .hero h1 {
   font-family: "Playfair Display", serif;
-  font-size: 4em;
+  font-size: 4.06em;
   margin: 0;
   font-weight: 400;
   color: #fff;
-  margin-bottom: 10px;
+
+  margin-bottom: 4px;
 }
 .hero p {
   margin-left: 5px;
@@ -212,7 +213,7 @@ Hero
         rgba(69, 69, 69, 0.092),
         rgba(0, 0, 0, 0)
       ),
-      url(../img/hero-background.jpg);
+      url(../images/flowers.jpg);
   }
 
   .hero-content {
