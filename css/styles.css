@@ -49,16 +49,16 @@ button:hover {
 }
 
 /* * * * * * * * * * * * * * * * * * * * *
-Header
+Header (navbar)
 * * * * * * * * * * * * * * * * * * * * */
 
 header {
   height: 66px;
   background: #2c9c91;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   padding-bottom: 5px;
   padding-left: 20px;
+  font-family: "Bitter", serif;
 }
 
 header ul {
@@ -73,6 +73,7 @@ header li {
 }
 
 header ul li a {
+  font-family: "Bitter", serif;
   height: 66px;
   padding: 0 70px 0 100px;
   display: flex;
