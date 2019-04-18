@@ -20,15 +20,10 @@ h2 {
   text-align: center;
 }
 
-p {
-  font-family: "Questrial", sans-serif;
-  font-size: 18px;
-}
-
 ul li {
   list-style: none;
   font-family: "Questrial", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .parallax-image {
@@ -208,7 +203,9 @@ Hero
 
 .hero h3 {
   color: #fff;
-  
+  text-shadow: 1px 1px 2px #000;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 3.06em;
 }
 
 .hero h4 {
@@ -380,9 +377,10 @@ About Page
   margin: 0 0 20px;
 }
 .about-content p {
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
   text-align: left;
   margin: 0 0 10px;
-  font-size: 15px;
 }
 
 .about-image {
@@ -456,9 +454,10 @@ Contact Page
 }
 
 .contact-form p {
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
   text-align: left;
   margin: 0 0 10px;
-  font-size: 15px;
 }
 
 /* * * * * * * * * * * * * * * * * * * * *
@@ -503,7 +502,8 @@ Projects Page
 }
 
 .projects-content ul li {
-  font-size: 15px;
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
 }
 
 .projects-content h6 {
@@ -518,7 +518,7 @@ Projects Page
 .projects-content p {
   text-align: left;
   margin: 0 0 10px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .projects-image {
@@ -547,6 +547,15 @@ Projects Page
 /* * * * * * * * * * * * * * * * * * * * *
 Challenges
 * * * * * * * * * * * * * * * * * * * * */
+.challenges-image {
+  min-width: 100%;
+  margin-bottom: 20px;
+  margin-left: -15px;
+}
+
+.challenges-image img {
+  width: 140%;
+}
 
 /* * * * * * * * * * * * * * * * * * * * *
 Footer
@@ -557,6 +566,11 @@ footer {
   background: #2c9c91;
 }
 
+footer .row {
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   padding: 20px;
 }
@@ -565,8 +579,9 @@ footer h2 {
   color: #fff;
   font-size: 0.9em;
   text-transform: uppercase;
+  font-weight: 900px;
   margin: 0 0 10px 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Bitter", serif;
   text-align: left;
 }
 
@@ -577,6 +592,8 @@ footer ul {
 
 footer li {
   margin-top: 8px;
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
 }
 
 footer a {
@@ -599,4 +616,5 @@ footer a {
 footer p {
   color: rgba(255, 255, 255, 0.639);
   font-size: 16px;
+  font-family: "Libre Franklin", sans-serif;
 }
