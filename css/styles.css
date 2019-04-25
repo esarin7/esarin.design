@@ -390,6 +390,13 @@ About Page
     flex-direction: column;
     align-items: center;
   }
+
+  .about-hero-content h2 {
+    margin: 16px;
+    font-size: 32px;
+    color: #fff;
+  }
+
   .about-card {
     min-width: 100%;
   }
@@ -497,6 +504,10 @@ Contact Page
 }
 
 @media (max-width: 1000px) {
+  .contact-hero-content h2 {
+    margin: 16px;
+    font-size: 32px;
+  }
   .contact-card {
     min-width: 80%;
   }
@@ -507,7 +518,6 @@ Contact Page
     flex-direction: column;
     align-items: center;
   }
-
   .contact-form input,
   textarea {
     border: solid 1px #686868a3;
