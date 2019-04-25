@@ -38,34 +38,31 @@
 
   <body>
     <!-- HEADER -->
-    <header>
-      <div
-        class="container-fluid d-flex justify-content-between align-items-stretch h-100"
-      >
-        <!-- Desktop Menu -->
+    <header class="d-flex container-fluid align-items-stretch h-100">
+      <!-- Desktop Menu -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu -->
+
+      <button id="hamburger-button">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="menu closed" id="menu">
+        <button id="close-button">
+          <i class="fas fa-times fa-xs"></i>
+        </button>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Work</a></li>
+          <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-
-        <!-- Mobile Menu -->
-        <button class="hamburger-icon" id="hamburger-button">
-          <i class="fas fa-bars"></i>
-        </button>
-
-        <div class="menu closed" id="menu">
-          <button id="close-button">
-            <i class="fas fa-times fa-xs"></i>
-          </button>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Work</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
       </div>
     </header>
 
@@ -161,18 +158,21 @@
               <li>
                 <a target="_blank" href="https://ca.linkedin.com/in/egsosalerin"
                   ><i class="fab fa-linkedin-in fa-lg"></i
-                ></a>
+                  ><span id="socialmediatag">LinkedIn</span></a
+                >
               </li>
 
               <li>
                 <a target="_blank" href="https://twitter.com/e_sarin"
                   ><i class="fab fa-twitter fa-lg"></i
-                ></a>
+                  ><span id="socialmediatag">Twitter</span></a
+                >
               </li>
               <li>
                 <a href="mailto:elenasosalerin@gmail.com"
                   ><i class="fas fa-envelope fa-lg"></i
-                ></a>
+                  ><span id="socialmediatag">Email</span></a
+                >
               </li>
             </ul>
           </div>

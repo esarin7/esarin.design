@@ -38,38 +38,36 @@
 
   <body>
     <!-- HEADER -->
-    <header>
-      <div
-        class="container-fluid d-flex justify-content-between align-items-stretch h-100"
-      >
-        
+    <header class="d-flex container-fluid align-items-stretch h-100">  
+      <!-- Desktop Menu -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
 
-        <!-- Desktop Menu -->
+      <!-- Mobile Menu -->
+
+      <button id="hamburger-button">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="menu closed" id="menu">
+        <button id="close-button">
+          <i class="fas fa-times fa-xs"></i>
+        </button>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Work</a></li>
+          <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-
-        <!-- Mobile Menu -->
-        <button class="hamburger-icon" id="hamburger-button">
-          <i class="fas fa-bars"></i>
-        </button>
-
-        <div class="menu closed" id="menu">
-          <button id="close-button">
-            <i class="fas fa-times fa-xs"></i>
-          </button>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
       </div>
-    </header>
+  </header>
+
+        
+       
 
     <!--HERO-->
     <div class="about-hero">
@@ -169,7 +167,7 @@
                 <li>+ Extensive research and curation of quotes.</li>
                 <li>+ Playing around with SVGs for the background.</li>
                 <li>+ Tinkering with the JavaScript features to create two functions, the rotation of the quotes during a determined time frame, and the clicking by the user at any time.</li>
-                <li>+ <i>In the next months, I want to increase the number of quotes, add other minimal animation features, and include a section featuring a dynamic infographic detailing Tyrion's wine consumption through the show's eight seasons.</i></li>
+                <li>+ In the next months, I want to increase the number of quotes, add other minimal animation features, and include a section featuring a dynamic infographic detailing Tyrion's wine consumption through the show's eight seasons.</li>
       
               </ul>
             </p>
@@ -257,27 +255,30 @@
           </div>
 
           <div class="col-sm-12 col-md-6 col-lg-3">
-            <h2>Let's Connect</h2>
-            <ul class="social-icons">
+              <h2>Let's Connect</h2>
+              <ul class="social-icons">
                 <li>
-                    <a target="_blank" href="https://ca.linkedin.com/in/egsosalerin"
-                      ><i class="fab fa-linkedin-in fa-lg"></i
-                    ></a>
-                  </li>
-    
-                  <li>
-                    <a target="_blank" href="https://twitter.com/e_sarin"
-                      ><i class="fab fa-twitter fa-lg"></i
-                    ></a>
-                  </li>
-                  <li>
-                    <a href="mailto:elenasosalerin@gmail.com"
-                      ><i class="fas fa-envelope fa-lg"></i
-                    ></a>
-                  </li>
-            </ul>
+                  <a target="_blank" href="https://ca.linkedin.com/in/egsosalerin"
+                    ><i class="fab fa-linkedin-in fa-lg"></i
+                    ><span id="socialmediatag">LinkedIn</span></a
+                  >
+                </li>
+  
+                <li>
+                  <a target="_blank" href="https://twitter.com/e_sarin"
+                    ><i class="fab fa-twitter fa-lg"></i
+                    ><span id="socialmediatag">Twitter</span></a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:elenasosalerin@gmail.com"
+                    ><i class="fas fa-envelope fa-lg"></i
+                    ><span id="socialmediatag">Email</span></a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
         <p>
           Elena Sosa Lerín | esarin.design | &copy; 2019<br />
           Thanks for dropping by, have a great day!
