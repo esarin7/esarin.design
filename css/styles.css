@@ -98,10 +98,10 @@ Mobile Menu
 * * * * * * * * * * * * * * * * * * * * */
 
 .menu {
-  width: 200px;
+  width: 150px;
   opacity: 0.9;
   background: #fe5f55;
-  height: 50vh;
+  height: 60vh;
   position: absolute;
   top: 0;
   right: 0;
