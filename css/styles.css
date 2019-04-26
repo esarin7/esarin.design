@@ -5,7 +5,7 @@ General
 .wrapper {
   width: 100%;
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1000px;
 }
 
 h1 {
@@ -23,7 +23,6 @@ h2 {
 ul li {
   list-style: none;
   font-family: "Questrial", sans-serif;
-  /* font-size: 16px; */
 }
 
 .parallax-image {
@@ -253,6 +252,10 @@ main {
   padding: 15px 0px 0px;
   width: 100%;
   margin: 5px auto 0;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /* HOMEPAGE */
