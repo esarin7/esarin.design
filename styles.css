@@ -1,0 +1,350 @@
+/* * * * * * * * * * * * * * * * * * * * *
+General
+* * * * * * * * * * * * * * * * * * * * */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 1.25em;
+  color: #1e2144;
+  background-color: rgba(4, 144, 113, 0.4);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* * * * * * * * * * * * * * * * * * * * *
+Sections' Details 
+* * * * * * * * * * * * * * * * * * * * */
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+section div {
+  width: 50%;
+}
+
+/* * * * * * * * * * * * * * * * * * * * *
+Text Section Details 
+* * * * * * * * * * * * * * * * * * * * */
+
+/* GENERAL LINKS STYLING */
+
+a {
+  color: #ff6640;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 4px;
+  transition: background-size cubic-bezier(0, 0.5, 0, 1) 0.8s;
+}
+
+a:hover,
+a:focus {
+  color: #fed364;
+  text-decoration: none;
+  background-size: 100% 4px;
+}
+
+ul {
+  list-style-type: none;
+}
+section div.text {
+  padding: 24px 82px 0 26px;
+}
+
+/* HEADERS */
+
+h2 {
+  font-family: "Domine", serif;
+  font-size: 3.125em;
+  line-height: 1.1;
+  margin: 0 0 0.6em 0;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875em;
+  line-height: 1.1;
+  margin: 0 0 0.6em 0;
+}
+
+h2 span {
+  color: #fed364;
+  cursor: cell;
+  transition: color 3s;
+  transition-delay: 5s;
+}
+
+h2 span:hover {
+  transition: color 0s;
+}
+
+h2 span:nth-child(1n):hover {
+  color: #049071;
+}
+
+h2 span:nth-child(2n):hover {
+  color: #1e2144;
+}
+
+h2 span:nth-child(3n):hover {
+  color: #ff6640;
+}
+
+h3 span {
+  color: #025643;
+  cursor: cell;
+  transition: color 3s;
+  transition-delay: 5s;
+}
+
+h3 span:hover {
+  transition: color 0s;
+}
+
+h3 span:nth-child(1n):hover {
+  color: #44c0c9;
+}
+
+h3 span:nth-child(2n):hover {
+  color: #ff6640;
+}
+
+h3 span:nth-child(3n):hover {
+  color: #1e2144;
+}
+
+h3 span:nth-child(4n):hover {
+  color: #fed364;
+}
+
+h3 span:nth-child(5n):hover {
+  color: #5dbdb1;
+}
+
+/* PARAGRAPHS */
+
+p {
+  margin: 1.6em 0 1.6em 0;
+}
+
+#places span {
+  color: #fed364;
+  font-weight: 900;
+}
+
+/* FOOTER  */
+
+.footer-info {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  text-align: center;
+}
+
+#about-site a {
+  text-transform: uppercase;
+}
+
+/* COLOR for SOCIAL MEDIA LINKS */
+
+#get-in-touch a {
+  font-size: 0.813em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #5dbdb1;
+  background-color: #1e2144;
+  padding: 4px 6px;
+  transition: background-size 0.2s;
+}
+
+#get-in-touch a:hover {
+  text-decoration: none;
+  background-color: #fed364;
+}
+
+#back-to-top {
+  font-size: 1.125em;
+}
+
+#copyright {
+  font-size: 0.75em;
+}
+
+#copyright span {
+  font-style: italic;
+  font-family: "Playfair Display", serif;
+}
+
+/* * * * * * * * * * * * * * * * * * * * *
+Image Section Details 
+* * * * * * * * * * * * * * * * * * * * */
+
+section div.imagesection {
+  height: 100vh;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+#fullimage {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* image on about page */
+#fullimage-2 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(assets/about-site.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Buttons to change images in slider */
+
+.buttons {
+  width: 100%;
+  padding: 72px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  position: absolute;
+  top: 580px;
+}
+
+#backButton {
+  color: #fed364;
+  font-size: 2.125em;
+  background: none;
+  border: none;
+  transition: 0.3s ease-in;
+}
+
+#nextButton {
+  color: #fed364;
+  font-size: 2.125em;
+  background: none;
+  border: none;
+  transition: 0.3s ease-in;
+}
+
+#backButton:hover {
+  color: rgba(254, 211, 100, 0.5);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+#backButton:focus {
+  border: none;
+  outline: none;
+}
+
+#nextButton:hover {
+  color: rgba(254, 211, 100, 0.5);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+#nextButton:focus {
+  border: none;
+  outline: none;
+}
+
+/* * * * * * * * * * * * * * * * * * * * *
+Responsiveness
+* * * * * * * * * * * * * * * * * * * * */
+
+@media (min-width: 320px) and (max-width: 800px) {
+  body {
+    font-size: 1.375em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  section {
+    display: block;
+  }
+
+  section div {
+    width: 100%;
+  }
+
+  section div.text {
+    padding: 18px 28px;
+  }
+
+  .buttons {
+    top: 220px;
+    padding: 20px;
+  }
+
+  section div.imagesection {
+    height: 76vw;
+  }
+
+  section #fullimage {
+    height: 76vw;
+  }
+
+  section #fullimage-2 {
+    height: 76vw;
+  }
+
+  .footer-info {
+    font-size: 0.938em;
+  }
+
+  #copyright {
+    font-size: 0.688em;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 800px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    font-size: 1.375em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.75em;
+  }
+
+  .buttons {
+    top: 160px;
+    padding: 20px;
+  }
+
+  section div.imagesection {
+    height: 76vw;
+  }
+
+  section #fullimage {
+    height: 76vw;
+  }
+
+  section #fullimage-2 {
+    height: 76vw;
+  }
+}
