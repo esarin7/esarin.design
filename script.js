@@ -51,7 +51,7 @@ setInterval(function() {
   if (imageIndex > 5) {
     imageIndex = 0;
   }
-}, 10000);
+}, 16000);
 
 function changeImage() {
   myImage.setAttribute("src", imageArray[imageIndex]);
