@@ -293,7 +293,7 @@ Responsiveness
   }
 
   .buttons {
-    top: 240px;
+    top: 160px;
     padding: 20px;
   }
 
@@ -329,6 +329,10 @@ Responsiveness
 
   h3 {
     font-size: 1.75em;
+  }
+
+  section {
+    display: block;
   }
 
   .buttons {
