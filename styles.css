@@ -9,7 +9,7 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 1em;
   color: #1e2144;
-  background-color: rgba(4, 144, 113, 0.4);
+  background-color: rgba(4, 144, 113, 0.4); !important;
   line-height: 1.5;
   margin: 0;
 }
