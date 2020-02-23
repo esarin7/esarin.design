@@ -211,58 +211,6 @@ section div.imagesection {
   background-position: center;
 }
 
-/* Buttons to change images in slider */
-
-/* .buttons {
-  width: 100%;
-  padding: 72px;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  position: absolute;
-  top: 74vh;
-}
-
-#backButton {
-  color: #fed364;
-  font-size: 2.125em;
-  background: none;
-  border: none;
-  transition: 0.3s ease-in;
-}
-
-#nextButton {
-  color: #fed364;
-  font-size: 2.125em;
-  background: none;
-  border: none;
-  transition: 0.3s ease-in;
-}
-
-#backButton:hover {
-  color: rgba(254, 211, 100, 0.5);
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
-
-#backButton:focus {
-  border: none;
-  outline: none;
-}
-
-#nextButton:hover {
-  color: rgba(254, 211, 100, 0.5);
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
-
-#nextButton:focus {
-  border: none;
-  outline: none;
-} */
-
 /* * * * * * * * * * * * * * * * * * * * *
 Responsiveness
 * * * * * * * * * * * * * * * * * * * * */

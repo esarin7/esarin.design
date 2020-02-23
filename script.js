@@ -31,15 +31,6 @@ var imageArray = [
   "./assets/bogota_colombia.jpg"
 ];
 
-// Buttons
-
-// var backButton = document.getElementById("backButton");
-// var nextButton = document.getElementById("nextButton");
-
-// // Buttons --- Events
-// nextButton.addEventListener("click", changeImage);
-// backButton.addEventListener("click", changeImageBack);
-
 //Functions
 
 var myImage = document.getElementById("fullimage");
@@ -51,7 +42,7 @@ setInterval(function() {
   if (imageIndex > 5) {
     imageIndex = 0;
   }
-}, 16000);
+}, 14000);
 
 function changeImage() {
   myImage.setAttribute("src", imageArray[imageIndex]);
