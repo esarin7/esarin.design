@@ -33,12 +33,12 @@ var imageArray = [
 
 // Buttons
 
-var backButton = document.getElementById("backButton");
-var nextButton = document.getElementById("nextButton");
+// var backButton = document.getElementById("backButton");
+// var nextButton = document.getElementById("nextButton");
 
-// Buttons --- Events
-nextButton.addEventListener("click", changeImage);
-backButton.addEventListener("click", changeImageBack);
+// // Buttons --- Events
+// nextButton.addEventListener("click", changeImage);
+// backButton.addEventListener("click", changeImageBack);
 
 //Functions
 

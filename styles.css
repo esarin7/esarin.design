@@ -213,7 +213,7 @@ section div.imagesection {
 
 /* Buttons to change images in slider */
 
-.buttons {
+/* .buttons {
   width: 100%;
   padding: 72px;
   display: flex;
@@ -261,7 +261,7 @@ section div.imagesection {
 #nextButton:focus {
   border: none;
   outline: none;
-}
+} */
 
 /* * * * * * * * * * * * * * * * * * * * *
 Responsiveness
