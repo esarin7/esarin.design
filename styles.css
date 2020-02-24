@@ -1,6 +1,9 @@
 /* * * * * * * * * * * * * * * * * * * * *
+
 General
+
 * * * * * * * * * * * * * * * * * * * * */
+
 * {
   box-sizing: border-box;
 }
@@ -16,11 +19,14 @@ body {
 }
 
 /* * * * * * * * * * * * * * * * * * * * *
+
 Sections' Details 
+
 * * * * * * * * * * * * * * * * * * * * */
 
 section {
   display: flex;
+
   flex-direction: row;
 }
 
@@ -33,31 +39,42 @@ section div {
 }
 
 /* * * * * * * * * * * * * * * * * * * * *
+
 Text Section Details 
+
 * * * * * * * * * * * * * * * * * * * * */
 
 /* GENERAL LINKS STYLING */
 
 a {
   color: #ff6640;
+
   text-decoration: none;
+
   background-image: linear-gradient(currentColor, currentColor);
+
   background-position: 0% 100%;
+
   background-repeat: no-repeat;
+
   background-size: 0% 4px;
+
   transition: background-size cubic-bezier(0, 0.5, 0, 1) 0.8s;
 }
 
 a:hover,
 a:focus {
   color: #fed364;
+
   text-decoration: none;
+
   background-size: 100% 4px;
 }
 
 ul {
   list-style-type: none;
 }
+
 section div.text {
   padding: 24px 82px 0 26px;
 }
@@ -66,8 +83,11 @@ section div.text {
 
 h2 {
   font-family: "Domine", serif;
-  font-size: 3.125em;
+  font-size: 3.625em;
+
   line-height: 1.1;
+  text-shadow: 1px 1px #b2b2b8;
+
   margin: 0 0 0.6em 0;
   -webkit-font-smoothing: antialiased;
 }
@@ -75,63 +95,130 @@ h2 {
 h3 {
   font-family: "Poppins";
   font-size: 1.875em;
+  text-shadow: 1px 1px #b2b2b8;
   line-height: 1.1;
   margin: 0 0 0.6em 0;
   -webkit-font-smoothing: antialiased;
 }
 
-h2 span {
-  color: #fed364;
-  cursor: cell;
-  transition: color 3s;
-  transition-delay: 5s;
+h4 {
+  font-family: "Poppins";
+  font-size: 1.25em;
+  line-height: 1.1;
+  margin: 0 0 0.6em 0;
+  -webkit-font-smoothing: antialiased;
 }
 
+/* These animation classes, will be used by the JS
+
+to randomly assign animations to letters */
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ANIMATION CLASSES
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* Green */
+
+@keyframes fadeInGreen {
+  from {
+    color: #1e2144;
+  }
+
+  to {
+    color: #049071;
+  }
+}
+
+.animateGreen {
+  animation-duration: 4s;
+
+  animation-fill-mode: forwards;
+
+  animation-name: fadeInGreen;
+}
+
+/* Yellow */
+
+@keyframes fadeInYellow {
+  from {
+    color: #44c0c9;
+  }
+
+  to {
+    color: #fed364;
+  }
+}
+
+.animateYellow {
+  animation-duration: 5s;
+
+  animation-fill-mode: forwards;
+
+  animation-name: fadeInYellow;
+}
+
+/* Dark Blue */
+
+@keyframes fadeInDarkBlue {
+  from {
+    color: #049071;
+  }
+
+  to {
+    color: #1e2144;
+  }
+}
+
+.animateDarkBlue {
+  animation-duration: 4s;
+
+  animation-fill-mode: forwards;
+
+  animation-name: fadeInDarkBlue;
+}
+
+/* Pink */
+
+@keyframes fadeInPink {
+  from {
+    color: #1e2144;
+  }
+
+  to {
+    color: #ff6640;
+  }
+}
+
+.animatePink {
+  animation-duration: 5s;
+
+  animation-fill-mode: forwards;
+
+  animation-name: fadeInPink;
+}
+
+/* Hover Black */
+
+@keyframes hoverBlack {
+  from {
+    color: #44c0c9;
+  }
+
+  to {
+    color: #1e2144;
+  }
+}
+
+h3 span:hover,
 h2 span:hover {
-  transition: color 0s;
-}
-
-h2 span:nth-child(1n):hover {
-  color: #049071;
-}
-
-h2 span:nth-child(2n):hover {
-  color: #1e2144;
-}
-
-h2 span:nth-child(3n):hover {
-  color: #ff6640;
-}
-
-h3 span {
-  color: #025643;
   cursor: cell;
-  transition: color 3s;
-  transition-delay: 5s;
-}
+  animation-duration: 3s;
 
-h3 span:hover {
-  transition: color 0s;
-}
+  animation-fill-mode: forwards;
 
-h3 span:nth-child(1n):hover {
-  color: #44c0c9;
-}
-
-h3 span:nth-child(2n):hover {
-  color: #ff6640;
-}
-
-h3 span:nth-child(3n):hover {
-  color: #1e2144;
-}
-
-h3 span:nth-child(4n):hover {
-  color: #fed364;
-}
-
-h3 span:nth-child(5n):hover {
-  color: #5dbdb1;
+  animation-name: hoverBlack;
 }
 
 /* PARAGRAPHS */
@@ -142,16 +229,18 @@ p {
 
 #places span {
   color: #fed364;
+
   font-weight: 900;
 }
 
-/* FOOTER  */
+/* FOOTER */
 
 .footer-info {
   font-family: "Poppins";
+
   font-size: 0.875em;
+
   text-align: center;
-  -webkit-font-smoothing: antialiased;
 }
 
 #about-site a {
@@ -162,17 +251,23 @@ p {
 
 #get-in-touch a {
   font-size: 0.813em;
+
   text-transform: uppercase;
+
   text-decoration: none;
+
   color: #5dbdb1;
+
   background-color: #1e2144;
+
   padding: 4px 6px;
+
   transition: background-size 0.2s;
-  -webkit-font-smoothing: antialiased;
 }
 
 #get-in-touch a:hover {
   text-decoration: none;
+
   background-color: #fed364;
 }
 
@@ -186,39 +281,54 @@ p {
 
 #copyright span {
   font-style: italic;
+
   font-family: "Playfair Display", serif;
-  -webkit-font-smoothing: antialiased;
 }
 
 /* * * * * * * * * * * * * * * * * * * * *
-Image Section Details 
+
+Image Section Details
+
 * * * * * * * * * * * * * * * * * * * * */
 
 section div.imagesection {
   height: 100vh;
+
   position: sticky;
+
   position: -webkit-sticky;
+
   top: 0;
 }
 
 #fullimage {
   width: 100%;
+
   height: 100vh;
+
   background-size: cover;
+
   background-position: center;
 }
 
 /* image on about page */
+
 #fullimage-2 {
   width: 100%;
+
   height: 100vh;
+
   background-image: url(assets/about-site.jpg);
+
   background-size: cover;
+
   background-position: center;
 }
 
 /* * * * * * * * * * * * * * * * * * * * *
+
 Responsiveness
+
 * * * * * * * * * * * * * * * * * * * * */
 
 @media (min-width: 320px) and (max-width: 800px) {
@@ -244,11 +354,6 @@ Responsiveness
 
   section div.text {
     padding: 18px 28px;
-  }
-
-  .buttons {
-    top: 160px;
-    padding: 20px;
   }
 
   section div.imagesection {
@@ -287,11 +392,6 @@ Responsiveness
 
   section {
     display: block;
-  }
-
-  .buttons {
-    top: 160px;
-    padding: 20px;
   }
 
   section div.imagesection {
