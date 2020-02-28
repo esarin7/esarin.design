@@ -64,7 +64,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #fed364;
+  color: #f8d469;
 
   text-decoration: none;
 
@@ -86,7 +86,7 @@ h2 {
   font-size: 3.625em;
 
   line-height: 1.1;
-  text-shadow: 1px 1px #b2b2b8;
+  text-shadow: 1px 1px #a3aba2;
 
   margin: 0 0 0.6em 0;
   -webkit-font-smoothing: antialiased;
@@ -95,7 +95,7 @@ h2 {
 h3 {
   font-family: "Poppins";
   font-size: 1.875em;
-  text-shadow: 1px 1px #b2b2b8;
+  text-shadow: 1px 1px #a3aba2;
   line-height: 1.1;
   margin: 0 0 0.6em 0;
   -webkit-font-smoothing: antialiased;
@@ -147,7 +147,7 @@ ANIMATION CLASSES
   }
 
   to {
-    color: #fed364;
+    color: #f8d469;
   }
 }
 
@@ -228,7 +228,7 @@ p {
 }
 
 #places span {
-  color: #fed364;
+  color: #f8d469;
 
   font-weight: 900;
 }
@@ -268,7 +268,7 @@ p {
 #get-in-touch a:hover {
   text-decoration: none;
 
-  background-color: #fed364;
+  background-color: #f8d469;
 }
 
 #back-to-top {
