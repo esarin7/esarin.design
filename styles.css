@@ -102,14 +102,6 @@ h3 {
   -webkit-font-smoothing: antialiased;
 }
 
-h4 {
-  font-family: "Poppins";
-  font-size: 1.25em;
-  line-height: 1.1;
-  margin: 0 0 0.6em 0;
-  -webkit-font-smoothing: antialiased;
-}
-
 /* These animation classes, will be used by the JS
 
 to randomly assign animations to letters */
