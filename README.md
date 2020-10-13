@@ -1,2 +1,2 @@
 # esarin.design
-My current two-page site built with HTML, CSS, and JS.
+My old two-page site built with HTML, CSS, and JS, no longer live.
